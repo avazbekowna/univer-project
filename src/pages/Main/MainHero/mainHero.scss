@@ -1,0 +1,298 @@
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 90px;
+  height: 900px;
+  margin-left: 70px;
+  img{
+  border-radius: 20%;
+    margin-top: 20px;
+
+
+  }
+  .hero {
+    &--cloth {
+      margin: 0 60px;
+
+      h1 {
+        font-weight: 900;
+        font-size: 48px;
+        color: rgb(12, 23, 63);
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+
+        a {
+          font-weight: 900;
+          font-size: 24px;
+          color: #000000;
+          list-style: none;
+          display: flex;
+          align-items: center;
+          margin: 5px 0;
+
+          div {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgb(6, 15, 63);
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 26px;
+        }
+
+        &__text {
+          li {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #hero {
+    background: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #hero {
+    img {
+      margin-top: 30px;
+    }
+
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 35px;
+          text-align: center;
+          padding-top: 20px;
+        }
+
+        &__text {
+          display: flex;
+          flex-direction: inherit;
+          justify-content: center;
+
+          a {
+            margin: 5px 23px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    background: transparent;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #hero {
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 35px;
+        }
+
+        &__text {
+          display: flex;
+          flex-direction: inherit;
+
+          a {
+            margin: 5px 6px;
+            font-size: 22px;
+            padding: 0 3px;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #hero {
+    .hero {
+      &--cloth {
+        margin: 0 0;
+
+        h1 {
+          font-size: 27px;
+        }
+
+        &__text {
+          a {
+            margin: 5px 2px;
+            font-size: 18px;
+
+            li {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 451px) {
+  #hero {
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  #hero {
+    .hero {
+      &--cloth {
+        &__text {
+          a {
+            margin: 5px 2px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #hero {
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      &--cloth {
+        &__text {
+          a {
+            margin: 5px 2px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  #hero {
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 24px;
+        }
+
+        &__text {
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  #hero {
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 23px;
+        }
+
+        &__text {
+          a {
+            font-size: 12px;
+
+          }
+        }
+      }
+    }
+  }
+  #hero .hero--cloth__text a div {
+    width: 4px;
+    height: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  #hero {
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 18px;
+          text-align: center;
+        }
+
+        &__text {
+          a {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 305px) {
+  #hero {
+    img {
+      width: 100%;
+    }
+
+    .hero {
+      &--cloth {
+        h1 {
+          font-size: 18px;
+          text-align: center;
+        }
+
+        &__text {
+          a {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}

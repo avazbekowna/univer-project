@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#header {
+  background: linear-gradient(90deg, #72072D 0%, #FF005C 100%);
+  padding: 40px 0;
+  width: 100%;
+  position: relative;
+  z-index: 90;
+}
+#header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .navbar--icon {
+  color: white;
+  font-size: 60px;
+  display: none;
+}
+#header .navbar h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+#header .navbar--search {
+  width: 50%;
+  height: 40px;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#header .navbar--search input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
+#header .navbar--search__icon {
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  color: white;
+}
+#header .navbar--nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .navbar--nav__block {
+  cursor: pointer;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+#header .navbar--nav__block--icon {
+  font-size: 30px;
+  color: white;
+}
+#header .navbar .searchRel {
+  display: none;
+}
+#header .headerUp {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270.73deg, #FF005C 0.7%, #72072D 89.36%);
+}
+#header .headerUp--icon {
+  font-size: 26px;
+  color: white;
+}
+
+.search-block {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(90deg, #72072D 0%, #FF005C 100%);
+  position: absolute;
+  backdrop-filter: blur(5px);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.search-block--search {
+  width: 50%;
+  height: 40px;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-block--search input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  padding-left: 10px;
+}
+.search-block--search__icon {
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  color: white;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  transition: 1s;
+}
+.menu .burgerMenu {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  background: linear-gradient(90deg, rgba(114, 7, 45, 0.83) 0%, rgba(255, 0, 92, 0.88) 100%);
+  color: white;
+}
+.menu .burgerMenu--group {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  position: absolute;
+  top: 0;
+}
+.menu .burgerMenu--group h1 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+.menu .burgerMenu--group__icon {
+  font-size: 60px;
+  color: white;
+}
+.menu .burgerMenu--block {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+.menu .burgerMenu--block__icon {
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  #header .navbar--search {
+    width: 40%;
+  }
+}
+@media (max-width: 1024px) {
+  #header .navbar--icon {
+    display: block;
+  }
+  #header .navbar--search {
+    display: none;
+  }
+  #header .navbar--nav {
+    display: none;
+  }
+  #header .navbar .searchRel {
+    display: block;
+  }
+  .search-block--search {
+    width: 80%;
+  }
+}
+@media (max-width: 810px) {
+  #header .navbar h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+  }
+  #header .navbar h1 span {
+    font-size: 18px;
+  }
+  #header--nav__block--icon {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=headerStyle.css.map */

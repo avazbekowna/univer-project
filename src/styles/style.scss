@@ -1,0 +1,33 @@
+@import "./src/components/Header/headerStyle";
+@import "./src/components/Footer/footerStyle";
+@import "./src/components/Footer/footerStyle";
+@import "./src/pages/WomanClothes/womanClothes";
+@import "./src/pages/ManClothes/manClothes";
+@import "./src/pages/ChildrenCLothes/children";
+@import "./src/pages/Shoe/shoe";
+@import "./src/pages/Basket/basket";
+@import "./src/pages/Faq/faq";
+@import "./src/pages/AboutUs/aboutUs";
+@import "./src/pages/Main/mainStyle";
+@import "./src/pages/AddBasket/addBasket";
+@import "./src/pages/Searcher/searcher";
+@import "./src/pages/MobileBakset/mobileBasketStyle";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  outline: none;
+  border: none;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}

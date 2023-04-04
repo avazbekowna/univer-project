@@ -1,0 +1,193 @@
+#shoeClothes {
+  padding: 50px 0;
+}
+#shoeClothes .shoeClothes--category {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+#shoeClothes .shoeClothes--category .own {
+  background: url("./../../assets/img/man.png") no-repeat center/cover;
+}
+#shoeClothes .shoeClothes--category .own:hover {
+  height: 300px;
+}
+#shoeClothes .shoeClothes--category .two {
+  background: url("./../../assets/img/woman.png") no-repeat center/cover;
+}
+#shoeClothes .shoeClothes--category .two:hover {
+  height: 300px;
+}
+#shoeClothes .shoeClothes--category .three {
+  background: url("./../../assets/img/child.png") no-repeat center/cover;
+}
+#shoeClothes .shoeClothes--category .three:hover {
+  height: 300px;
+}
+#shoeClothes .shoeClothes--category .four {
+  background: url("./../../assets/img/shoe.png") no-repeat center/cover;
+}
+#shoeClothes .shoeClothes--category__block {
+  width: 22.7%;
+  height: 100px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+#shoeClothes .shoeClothes--category__block--bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(1.08deg, #72072D 0.83%, rgba(196, 196, 196, 0) 94.44%);
+  display: flex;
+  color: #FFFFFF;
+  position: relative;
+}
+#shoeClothes .shoeClothes--category__block--bg__text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  color: #FFFFFF;
+}
+#shoeClothes .shoeClothes--category__block--bg__text--icon {
+  font-size: 30px;
+  margin-left: 20px;
+}
+#shoeClothes .shoeClothes--title {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 20px 0;
+  color: #72072D;
+}
+#shoeClothes .shoeClothes--group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+#shoeClothes .shoeClothes--group__block {
+  width: 230px;
+  height: 320px;
+  margin: 20px 20px;
+}
+#shoeClothes .shoeClothes--group__block div {
+  width: 100%;
+  height: 260px;
+  border: 1px solid rgba(0, 0, 0, 0.53);
+  border-radius: 5px;
+}
+#shoeClothes .shoeClothes--group__block div img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+#shoeClothes .shoeClothes--group__block h3 {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  margin-top: 10px;
+}
+#shoeClothes .shoeClothes--group__block p {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+}
+#shoeClothes .shoeClothes--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+#shoeClothes .shoeClothes--btn button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid #D118A8;
+  color: #D118A8;
+  background: transparent;
+}
+
+@media (max-width: 1100px) {
+  #shoeClothes .shoeClothes h1 {
+    font-size: 18px;
+  }
+  #shoeClothes .shoeClothes--category {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #shoeClothes .shoeClothes--category__block {
+    margin: 20px 0;
+    width: 20%;
+    height: 300px;
+  }
+  #shoeClothes .shoeClothes--category__block--bg__text--icon {
+    font-size: 25.5px;
+  }
+}
+@media (max-width: 780px) {
+  #shoeClothes .shoeClothes--title {
+    font-size: 30px;
+  }
+  #shoeClothes .shoeClothes--category {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  #shoeClothes .shoeClothes--group__block {
+    width: 160px;
+  }
+  #shoeClothes .shoeClothes--group__block h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 470px) {
+  #shoeClothes .shoeClothes--group__block {
+    width: 130px;
+    height: 260px;
+  }
+  #shoeClothes .shoeClothes--group__block div {
+    height: 200px;
+  }
+  #shoeClothes .shoeClothes--group__block div img {
+    height: 200px;
+  }
+  #shoeClothes .shoeClothes--group__block h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 375px) {
+  #shoeClothes .shoeClothes--title {
+    font-size: 20px;
+  }
+  #shoeClothes .shoeClothes--group__block {
+    width: 100px;
+    height: 240px;
+  }
+  #shoeClothes .shoeClothes--group__block div {
+    height: 180px;
+  }
+  #shoeClothes .shoeClothes--group__block div img {
+    height: 180px;
+  }
+  #shoeClothes .shoeClothes--group__block h3 {
+    font-size: 17px;
+  }
+}
+@media (max-width: 320px) {
+  #shoeClothes .shoeClothes--group__block {
+    width: 90px;
+    height: 220px;
+  }
+  #shoeClothes .shoeClothes--group__block div {
+    height: 160px;
+  }
+  #shoeClothes .shoeClothes--group__block div img {
+    height: 160px;
+  }
+  #shoeClothes .shoeClothes--group__block h3 {
+    font-size: 17px;
+  }
+}
+
+/*# sourceMappingURL=shoe.css.map */
